@@ -1,5 +1,4 @@
 /* #4 #sweat #external css file */
-
 /* GLOBAL */
 
 /* #4 #global styles*/
@@ -28,13 +27,18 @@ button, strong {
 
 /* #4 #sweat address both #app-bar s */
 h1 {
-    background-color: #3F51B5;
+    background-color: #08728D;
     color: white;
 }
 
 
 /* CHANNELS LIST */
-
+#channels_area {
+    float:left;
+    width:40%;
+    height: 100%;
+    background-color: white;
+}
 /* #4 #sweat #channels */
 ul {
     /* #3 #channels #list modifies h2 to ul */
@@ -55,8 +59,8 @@ li {
 
 /* #4 active #channel is #highlighted */
 li.selected {
-    color: #3F51B5;
-    border-left: 4px solid #3F51B5;
+    color: #08728D;
+    border-left: 4px solid #08728D;
 }
 
 li img {
@@ -72,20 +76,21 @@ li img {
     background-color: white;
     /* #3 #tab-bar #container has all buttons centered */
     text-align: center;
-}
+    /* Tab Bar is at the bottom*/
+    top: 0;
+    display: flex;
 
-/* #4 add styles to #tab-bar #buttons */
+}
 #tab-bar button {
     background-color: white;
     border: none;
     font-size: 13px;
-
+    justify-content: center;
     /* #4 #tab-bar buttons have a width of #one-third of the available space */
     width: 33%;
     height: 72px;
     padding: 16px;
 }
-
 /* #4 #tab-bar buttons do have a #line-break and images are centered due to the left&right auto margin */
 #tab-bar button img {
     display: block;
@@ -94,9 +99,19 @@ li img {
 
 /* #4 the selected #tab-bar #button is #highlighted */
 #tab-bar button.selected {
-    color: #3F51B5;
-    border-bottom: 4px solid #3F51B5;
+    color: #08728D;
 }
+
+
+      
+
+/* #4 #tab-bar buttons do have a #line-break and images are centered due to the left&right auto margin */
+#tab-bar button img {
+    display: block;
+    margin: 0 auto 4px auto;
+}
+
+/* #4 the selected #tab-bar #button is #highlighted */
 
 
 /* MESSAGES */
@@ -133,13 +148,37 @@ li img {
 }
 
 .message button {
-    background-color: #CDDC39;
+    background-color: #6E73C2;
     color: black;
     text-transform: uppercase;
+    align-items: 8px;
 }
 
 /* #4 left align own #messages using #margins */
 .message.own {
     margin-left: 17.5%;
 }
-
+/*Spit Screen*/
+.channels{
+    position: absolute;
+    left: 100%;
+    top: 0px;
+}
+/*emoji*/
+#chat-bar{
+    background-color: white;
+    text-align: left;
+    font-size: 28px;
+    border: 1px solid black;
+    overflow: scroll;
+    padding: 16;
+    margin-left: 16px;
+    margin-top: 284;
+    padding: 16px 16px 16px;
+    width: 28%;
+    
+    text-align: left;
+}
+#emojis-button{
+    background-color: white;
+}
