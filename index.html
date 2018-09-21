@@ -9,7 +9,10 @@
 
     <!-- #4 #sweat out the styles by creating an #external css -->
     <link rel="stylesheet" href="css/style.css" />
-
+    <script   
+    src="https://code.jquery.com/jquery-3.3.1.min.js"   
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   
+    crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -176,11 +179,11 @@
             <button>+5 min.</button></p></p>
         </div>
         <div id="chat-bar">
-            </button><div id="emojis">&#x1F601; &#x1F602; &#x1F603; &#x1F604; &#x1F605; &#x1F60D; &#x1F60C; <br>
+            </button><div id="emojis" style="display:none;"">&#x1F601; &#x1F602; &#x1F603; &#x1F604; &#x1F605; &#x1F60D; &#x1F60C; <br>
                 &#x1F60B; &#x1F60A; &#x1F609; &#x1F606; &#x1F60C; &#x1F61C; &#x1F618; 
                 </div>
             </div>
-            <button id="emojis-button"><img
+            <button id="emojis-button" onclick="$(emojis).toggle()"><img
                 src="http://ip.lfe.mw.tum.de/sections/smile-o.png">
     </div></section>
 
